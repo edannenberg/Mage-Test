@@ -1469,4 +1469,15 @@ class Mage_Core_Model_App
         $id = preg_replace('/([^a-zA-Z0-9_]{1,1})/', '_', $id);
         return $id;
     }
+
+    /**
+     * Get is cache locked
+     *
+     * @return bool
+     */
+    public function getIsCacheLocked()
+    {
+        return (bool)$this->_isCacheLocked;
+    }
+
 }
